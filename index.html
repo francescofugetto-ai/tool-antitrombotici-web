@@ -204,10 +204,11 @@ html.js.motore-ko #nomotore{display:block}
 <header class="hero">
   <div class="kicker">Strumento · Terapia antitrombotica · Valvulopatie</div>
   <h1 class="headline">Dopo bioprotesi, riparazione o TAVI — quale antitrombotico, e per quanto</h1>
-  <p class="lede"><strong>Come si usa.</strong> Scegli l'<strong>intervento</strong> e dì se il paziente ha un'<strong>indicazione all'anticoagulazione</strong> a lungo termine (per esempio la FA). Lo strumento dà lo schema della Fig. 19 e della Rec. Table 16, fase per fase: che cosa nei primi mesi, che cosa dopo, con la classe. <strong>Azzera</strong>, in alto, ricomincia. Per la <strong>protesi meccanica</strong> c'è lo strumento del target INR.</p>
+  <p class="lede"><strong>Come si usa.</strong> Scegli l'<strong>intervento</strong> e dì se il paziente ha un'<strong>indicazione all'anticoagulazione</strong> a lungo termine (per esempio la FA). Lo strumento dà lo schema della Fig. 19 e della Rec. Table 16, fase per fase: che cosa nei primi mesi, che cosa dopo, con la classe. Con un'<strong>endocardite infettiva</strong> la sua casella porta accanto la condotta della ESC 2023. <strong>Azzera</strong>, in alto, ricomincia. Per la <strong>protesi meccanica</strong> c'è lo strumento del target INR.</p>
   <div class="meta-row">
     <span class="meta-chip"><strong>Fonte</strong> 2025 ESC/EACTS Guidelines for the management of valvular heart disease</span>
     <span class="meta-chip"><strong>Calcolo</strong> Rec. Table 16 pp. 4696–4697 · Fig. 19 p. 4695 · §14.3.2 pp. 4695–4696</span>
+    <span class="meta-chip"><strong>Endocardite</strong> ESC 2023, § 10.6 p. 3998 · Rec. Table 22 p. 4009 · § 9.1 p. 3991 · supplementare, Tab. S10 p. 13</span>
   </div>
 </header>
 
@@ -244,17 +245,20 @@ html.js.motore-ko #nomotore{display:block}
     <label class="chk"><input type="checkbox" id="doac"><span>Già in terapia con un DOAC</span></label>
     <label class="chk"><input type="checkbox" id="emorragico"><span>Alto rischio emorragico</span></label>
     <label class="chk"><input type="checkbox" id="antiagg"><span>Indicazione chiara a un antiaggregante<small>per esempio malattia aterosclerotica</small></span></label>
+    <label class="chk"><input type="checkbox" id="ei"><span>Endocardite infettiva in corso o recente<small>anche quando l'intervento è stato la chirurgia dell'endocardite: ESC 2023, cambia il dopo. «Recente»: la fonte non dà un tempo</small></span></label>
   </div>
 </div>
 
-<div class="stage"><span class="stage-n">2</span><span class="stage-t">Lo schema</span><span class="stage-w">Rec. Table 16, pp. 4696–4697</span></div>
+<div class="stage"><span class="stage-n">2</span><span class="stage-t">Lo schema</span><span class="stage-w">Rec. Table 16, pp. 4696–4697 · ESC 2023 endocardite, § 10.6</span></div>
 <div class="card" id="outSchema"></div>
 <div class="card"><h3>Da non fare</h3><div id="outNo"></div></div>
 <div class="card"><h3>Dose e rene</h3><div id="outDose"></div></div>
 <div class="card"><h3>Limiti</h3><ul class="limiti" id="limiti"></ul></div>
 
 <div class="foot">
-  <strong>Fonte.</strong> Praz F, Borger MA, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. <em>Eur Heart J</em> 2025;46:4635–4736 — terapia antitrombotica dopo bioprotesi e riparazione (Rec. Table 16, pp. 4696–4697; Fig. 19, p. 4695), testo §14.3.2 (pp. 4695–4696: POPular TAVI, GALILEO, ENVISAGE-TAVI-AF, ATLANTIS, valvole transcatetere mitraliche e tricuspidaliche, TEER, ripresa del DOAC). Ogni numero mostrato porta la pagina.<br><br>
+  <strong>Fonte.</strong> Praz F, Borger MA, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. <em>Eur Heart J</em> 2025;46:4635–4736 — terapia antitrombotica dopo bioprotesi e riparazione (Rec. Table 16, pp. 4696–4697; Fig. 19, p. 4695), testo §14.3.2 (pp. 4695–4696: POPular TAVI, GALILEO, ENVISAGE-TAVI-AF, ATLANTIS, valvole transcatetere mitraliche e tricuspidaliche, TEER, ripresa del DOAC). Ogni numero mostrato porta la pagina.<br>
+  <strong>Endocardite.</strong> Delgado V, Ajmone Marsan N, de Waha S, et al. 2023 ESC Guidelines for the management of endocarditis. <em>Eur Heart J</em> 2023;44:3948–4042, doi:10.1093/eurheartj/ehad193, con il suo Supplementary data — anticoagulante con un'indicazione preesistente (§ 9.1, p. 3991), antitrombotici dopo la chirurgia (§ 10.6, p. 3998), antitrombotici nell'endocardite (§ 12.11 e Rec. Table 22, p. 4009), il cervello dopo l'intervento (Tab. S10, supplementare, p. 13). Il percorso completo è nella scheda 13, endocardite.<br>
+  <strong>Rene dell'eparina non frazionata.</strong> La ESC/EACTS 2025 la usa nella CKD stadio IV–V (Tab. 11, p. 4694); accanto, la scheda tecnica di eparina sodica, § 4.2–4.4 (AIFA, revisione 23/02/2024), letta il 03/10/2026 come nel prontuario della scheda 10, fibrillazione atriale.<br><br>
   Strumento personale di studio e consultazione: <strong>non sostituisce il giudizio clinico né la scheda tecnica</strong>. Le dosi dei DOAC non sono nella linea guida sulle valvulopatie (rinvio alla linea guida sulla FA): lo strumento non le inventa. Non salva i dati e non li invia in rete.
 </div>
 
@@ -285,7 +289,38 @@ html.js.motore-ko #nomotore{display:block}
        (rivaroxaban 10 mg + ASA: piu' morti e tromboembolie); nessuna
        raccomandazione fra VKA e DOAC nella TAVI con indicazione (ENVISAGE-TAVI-AF,
        ATLANTIS); valvole transcatetere mitraliche/tricuspidaliche: OAC per
-       almeno 6 mesi o a tempo indeterminato; TEER: ASA a lungo termine. */
+       almeno 6 mesi o a tempo indeterminato; TEER: ASA a lungo termine.
+     2023 ESC Guidelines for the management of endocarditis (decisione del
+     medico del 10/10/2026), letta sulla pagina — vale solo con la casella:
+     § 10.6, p. 3998: dopo la chirurgia per EI antiaggreganti e
+       antitrombotici restrittivi o su misura, per il rischio di emorragia
+       intracranica dopo un'embolia cerebrale; piu' facile con bioprotesi o
+       riparazione che con protesi meccanica (testo, senza classe).
+     Supplementare, Tab. S10, p. 13: limitarli nei primi giorni dopo
+       l'intervento, guidarli con l'imaging cerebrale ripetuto.
+     Rec. Table 22, p. 4009: sanguinamento maggiore, emorragia intracranica
+       compresa -> interrompere I C; senza ictus, con chirurgia probabile,
+       OAC sostituito da UFH sotto stretto monitoraggio IIa C; trombolisi III C.
+     § 9.1, p. 3991: l'anticoagulante con un'indicazione preesistente si
+       continua nell'EI sinistra (testo); eparina preferita con sanguinamento
+       cerebrale o chirurgia precoce; contro l'embolia gli antitrombotici non
+       giovano. § 12.11, p. 4009: l'EI da sola non e' un'indicazione; nessun
+       dato per iniziarli contro l'ictus; prove basse, Endocarditis Team.
+     Quale farmaco e per quanto dopo l'intervento, e fra AVK e DOAC, la ESC
+     2023 non lo dice.
+     Decisioni del medico del 23-24/10/2026: la preferenza del § 9.1 per
+       l'eparina con un sanguinamento cerebrale e' una nota d'incoerenza
+       (contro la Rec. Table 22: interruzione I C, ripresa con UFH IIa C solo
+       con valvola meccanica), non una condotta; «recente» non ha un tempo
+       nella fonte.
+     D18 (decisione del medico del 24/10/2026), rene dell'eparina non
+       frazionata: e' l'eparina del rene grave, quella che la Tab. 11,
+       p. 4694, usa nella CKD IV-V (come il Tool EP); accanto, la scheda
+       tecnica di eparina sodica § 4.2-4.4 (AIFA, revisione 23/02/2024, letta
+       il 03/10/2026 per il prontuario della scheda 10): nessun aggiustamento
+       della dose, «patologie renali gravi» fra le controindicazioni senza
+       soglia, potassio da controllare nella malattia renale cronica. La
+       soglia di «grave» resta DA VERIFICARE. */
   var ASA = "ASA 75–100 mg/die";
 
   /* ═══ FUNZIONE PURA ═══════════════════════════════════════════════════ */
@@ -353,7 +388,32 @@ html.js.motore-ko #nomotore{display:block}
   function passo(i, t) { return '<div class="passo"><span class="ico">' + i + '</span><span class="tx">' + t + "</span></div>"; }
   function chip(k, t) { return '<span class="cat ' + k + '">' + t + "</span>"; }
 
-  function S() { return { int:radio("int"), oac:radio("oac"), fa:ck("fa"), doac:ck("doac"), emorragico:ck("emorragico"), antiagg:ck("antiagg") }; }
+  function S() { return { int:radio("int"), oac:radio("oac"), fa:ck("fa"), doac:ck("doac"), emorragico:ck("emorragico"), antiagg:ck("antiagg"), ei:ck("ei") }; }
+
+  /* Endocardite infettiva (ESC 2023): le sue righe stanno ACCANTO allo schema
+     della ESC/EACTS 2025, che la ESC 2023 non sostituisce con uno suo. */
+  var EI = "ESC 2023 endocardite, ";
+  function pgEI(p) { return ' <span class="pg">' + EI + p + "</span>"; }
+  /* Rene dell'eparina non frazionata (regola 5 del progetto; D18, decisione
+     del medico del 24/10/2026), come nel Tool EP: e' l'eparina che la fonte
+     sceglie con il rene grave, e accanto la scheda tecnica, che lo dice in
+     un altro modo. */
+  var STU = "scheda tecnica di eparina sodica, § 4.2–4.4, AIFA, revisione 23/02/2024";
+  function reneUFH() { return "rene: è l'eparina del rene grave, quella che la ESC/EACTS 2025 usa nella CKD stadio IV–V" + pg("Tab. 11, p. 4694") + "; accanto, la scheda tecnica dell'eparina sodica non dà un aggiustamento della dose, ma mette fra le controindicazioni le «patologie renali gravi», senza una soglia, e chiede di controllare il potassio nella malattia renale cronica" + ' <span class="pg">' + STU + "</span>" + " — DA VERIFICARE la soglia di «grave»"; }
+  function testoEI(s) {
+    var h = '<div class="esito">' + chip("k3", "endocardite · ESC 2023") + "</div>";
+    h += passo("·", "Dopo la <b>chirurgia per endocardite</b> antiaggreganti e anticoagulanti si usano in modo <b>restrittivo o su misura</b>, per il rischio di emorragia intracranica dopo un'embolia cerebrale; è più facile dopo una bioprotesi o una riparazione che dopo una protesi meccanica" + pgEI("§ 10.6, p. 3998, testo senza classe") + ".");
+    h += passo("·", "Dopo un <b>ictus</b>: antitrombotici <b>limitati nei primi giorni</b> dopo l'intervento, e guidati dall'<b>imaging cerebrale ripetuto</b>" + pgEI("supplementare, Tab. S10, p. 13") + ".");
+    h += passo("·", "<b>Sanguinamento maggiore</b>, emorragia intracranica compresa: <b>interrompere</b> antiaggregante e anticoagulante " + pill("I", "C") + pgEI("Rec. Table 22, p. 4009") + ".");
+    if (s.oac === "si") {
+      h += passo("·", "<b>Indicazione all'anticoagulante</b>: nell'endocardite sinistra l'anticoagulante che ha un'indicazione preesistente si continua, se non ci sono altre controindicazioni" + pgEI("§ 9.1, p. 3991, testo senza classe") + ".");
+      h += passo("·", "Se un intervento per l'endocardite è <b>ancora probabile</b> (per esempio da <i>S. aureus</i>) e non c'è stato un ictus: l'anticoagulante orale lascia il posto all'<b>eparina non frazionata</b>, sotto stretto monitoraggio " + pill("IIa", "C") + pgEI("Rec. Table 22, p. 4009") + ". Dose dell'eparina: non nella fonte — DA VERIFICARE; " + reneUFH() + ".");
+      h += nota("", "<b>Incoerenza della fonte.</b> Con un sanguinamento cerebrale il testo preferisce passare dall'anticoagulante orale all'eparina" + pgEI("§ 9.1, p. 3991") + "; la Rec. Table 22 invece, con un'emorragia intracranica, interrompe l'anticoagulante " + pill("I", "C") + " e fa ripartire l'eparina non frazionata solo con una valvola meccanica " + pill("IIa", "C") + pgEI("Rec. Table 22, p. 4009") + " — la protesi meccanica sta nel Tool INR. Senza valvola meccanica, dopo un'emorragia intracranica la tabella non dà una ripresa, e il testo non dice se parla di un sanguinamento minore. Lo strumento segue la tabella: si interrompe.");
+    }
+    h += passo("·", "L'endocardite da sola <b>non è un'indicazione</b> ad antitrombotici o anticoagulanti" + pgEI("§ 12.11, p. 4009") + "; contro la sua embolia non giovano" + pgEI("§ 9.1, p. 3991") + ", e nessun dato sostiene di iniziarne per curare o prevenire l'ictus" + pgEI("§ 12.11, p. 4009") + ".");
+    h += nota("", "<b>Dove la ESC 2023 tace.</b> Quale farmaco e per quanto, intervento per intervento, non lo dice" + (s.oac === "si" ? "; né sceglie fra AVK e DOAC" : "") + ": lo schema qui sotto è quello della ESC/EACTS 2025, scritto fuori dall'endocardite, e si legge con il limite dei primi giorni. Prove di livello basso: si decide nell'Endocarditis Team" + pgEI("§ 12.11, p. 4009") + ". Il percorso completo è nella scheda 13, endocardite.");
+    return h + '<div class="muted" style="font-size:12.5px;font-weight:600;margin:12px 0 2px">Lo schema della ESC/EACTS 2025, fuori dall\'endocardite</div>';
+  }
 
   function disegna() {
     var s = S(), sc = schema(s), h = "";
@@ -362,15 +422,20 @@ html.js.motore-ko #nomotore{display:block}
       h += passo(String(i + 1), '<b style="text-transform:uppercase;font-size:11.5px;letter-spacing:.04em;color:var(--text-muted)">' + x.quando + "</b><br>" + x.cosa + (x.c ? " " + pill(x.c, x.l) : "") + pg(x.pg));
     });
     (sc.note || []).forEach(function (t) { h += nota("info", t); });
+    if (s.ei) h = testoEI(s) + h;
     el("outSchema").innerHTML = h;
-    el("outNo").innerHTML = (sc.no && sc.no.length) ? sc.no.map(function (t) { return nota("stop", t + "."); }).join("") : '<div class="muted">—</div>';
-    el("outDose").innerHTML = nota("info", "ASA a basse dosi: <b>75–100 mg/die</b>" + pg("Rec. Table 16, p. 4696") + ". Dose dei DOAC e aggiustamento per funzione renale: <b>non riportati</b> nella linea guida sulle valvulopatie, che rimanda alla linea guida sulla FA — DA VERIFICARE. VKA: dose guidata dall'INR; target non indicato qui per la bioprotesi.");
+    var no = (sc.no || []).map(function (t) { return nota("stop", t + "."); }).join("");
+    if (s.ei) no += nota("stop", "<b>Trombolisi</b> in un paziente con endocardite " + pill("III", "C") + pgEI("Rec. Table 22, p. 4009") + ".");
+    el("outNo").innerHTML = no || '<div class="muted">—</div>';
+    el("outDose").innerHTML = nota("info", "ASA a basse dosi: <b>75–100 mg/die</b>" + pg("Rec. Table 16, p. 4696") + ". Dose dei DOAC e aggiustamento per funzione renale: <b>non riportati</b> nella linea guida sulle valvulopatie, che rimanda alla linea guida sulla FA — DA VERIFICARE. VKA: dose guidata dall'INR; target non indicato qui per la bioprotesi.") +
+      (s.ei && s.oac === "si" ? nota("info", "<b>Eparina non frazionata</b> (endocardite, al posto dell'anticoagulante orale): dose non nella fonte — DA VERIFICARE; " + reneUFH() + ".") : "");
 
     var lim = [];
     lim.push("Nella TAVI con indicazione all'OAC la fonte <b>non sceglie</b> fra VKA e DOAC.");
     lim.push("Valvole transcatetere mitraliche e tricuspidaliche e TEER: solo <b>pratica comune</b>, dati limitati.");
     lim.push("Dopo i 3 mesi della riparazione mitralica o tricuspidalica senza indicazione all'OAC la fonte non dice che cosa fare.");
     lim.push("La <b>protesi meccanica</b> non è qui: VKA a vita, mai DOAC né DAPT.");
+    if (s.ei) lim.push("Endocardite (ESC 2023): lo strumento non chiede se c'è stata un'embolia cerebrale, un'emorragia intracranica o un sanguinamento maggiore, né se un intervento è ancora probabile; le righe valgono ciascuna con la sua condizione. La ESC 2023 non dà uno schema per intervento né la dose dell'eparina. «In corso o recente»: per «recente» la fonte non dà un tempo.");
     el("limiti").innerHTML = "<li>" + lim.join("</li><li>") + "</li>";
 
     function bar(id, k, t) { var b = el(id); b.className = "cat " + k; b.innerHTML = t; }
